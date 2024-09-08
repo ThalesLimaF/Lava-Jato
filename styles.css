@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #3580db;
+}
+
+
+
+h3{
+    font-size: 50px;
+    color: cornflowerblue;
+}
+
+p{
+   color: white; 
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+nav{
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after{
+    content: '';
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+
+}
+
+nav ul a:hover::after{
+    width: 100%;
+
+}
+
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s ;
+    
+}
+
+.btn:hover{
+    background-color: #3580db;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: #0f014d;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #0f014d;
+    margin: 18px 0;
+}
+
+.servicos h3{
+    text-align: center;
+    color: white;
+}
+
+.servicos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.servicos .card-item{
+    background-color: #578fd3;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+}
+
+.servicos .card-item img{
+    border-radius: 50px;
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+.servicos .card-item .nome{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.servicos .card-item .descricao{
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+
+.encontrar h2{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.container .mapa{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #151e9b;
+    color: white;
+  }
+  
+  footer section.social a {
+    color: #496ebd;
+    text-decoration: none;
+  }
+  footer section.copyright {
+    color: #204c80;
+    background-color: #afafc7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  
+  .footer-content{
+    display: flex;
+    text-align: center;
+    padding: 60px;
+  }
+  
+  .footer-content >section{
+    flex-basis: calc(100% / 3);
+  }
+  
+  .social ul{
+    display: flex;
+    list-style: none;
+    gap:22px;
+    padding-left: 0;
+    justify-content: center;
+  }
+  
+  
+  
+  .social h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .social ul li{
+    text-align: center;
+  }
+  
+  
+  .social ul li a i{
+    border: 3px solid rgb(128, 128, 128);
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .social ul li a i:hover{
+    color: white;
+    background-color: rgb(36, 94, 128);
+  }
+
+  @media screen and (max-width: 412px) {
+    container {
+        display: block;
+        background-image: none;
+    }
+
+    .containerimagem {
+        width: 50vw;
+    }
+    .containercaixa {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .footer-content{
+        display: block;
+    }
+.mapa{
+    scale: 0.5;;
+
+}
+.mapa{
+margin-right: 60%;
+}
+
+}
